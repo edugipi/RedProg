@@ -8,11 +8,10 @@
 class SocketTools
 {
 public:
-	SocketTools();
-	~SocketTools();
 
 	static void loadLib();
 	static void cleanLib();
-	static void showError(std::string message);
+	static void showError(const std::string &message);
+
 };
 
