@@ -9,7 +9,6 @@ void run() {
 }
 
 int main() {
-	try {
 		//cargamos libreria
 		SocketTools::loadLib();
 		
@@ -17,12 +16,6 @@ int main() {
 		//entonces ya podemos descargar la libreria
 
 		SocketTools::cleanLib();
-		
-
-	}
-	catch (std::exception & e) {
-		std::cout << e.what();
-	}
 
 	return 0;
 }

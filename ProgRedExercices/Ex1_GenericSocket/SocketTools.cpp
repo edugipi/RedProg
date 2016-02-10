@@ -1,5 +1,5 @@
 #include "SocketTools.h"
-
+#include <iostream>
 
 
 void SocketTools::loadLib() {
@@ -12,5 +12,5 @@ void SocketTools::cleanLib() {
 }
 
 void SocketTools::showError(const std::string &message) {
-	throw std::exception(message.c_str() + WSAGetLastError());
+	std::cout << message.c_str() + WSAGetLastError();
 }
